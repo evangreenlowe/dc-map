@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_095fd4c578ace70d10699807a80bb12a {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_095fd4c578ace70d10699807a80bb12a" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_095fd4c578ace70d10699807a80bb12a = L.map(
+                "map_095fd4c578ace70d10699807a80bb12a",
+                {
+                    center: [38.9072, -77.0369],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 10,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_736602cc5c9054c7d12ad7236da18ab9 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_095fd4c578ace70d10699807a80bb12a);
+        
+    
+            var marker_8e0a74d3c2d8886564d87e6bc5ddc7f6 = L.marker(
+                [38.9295, -77.0146],
+                {}
+            ).addTo(map_095fd4c578ace70d10699807a80bb12a);
+        
+    
+        var popup_af11ccc4aafa318f2c452f986d575d4f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_fcb8d415e53aa9184955e0e247151d79 = $(`<div id="html_fcb8d415e53aa9184955e0e247151d79" style="width: 100.0%; height: 100.0%;"><b>MedStar Washington Hospital Center</b><br>Major teaching hospital serving diverse populations with robust OB/GYN services.</div>`)[0];
+            popup_af11ccc4aafa318f2c452f986d575d4f.setContent(html_fcb8d415e53aa9184955e0e247151d79);
+        
+
+        marker_8e0a74d3c2d8886564d87e6bc5ddc7f6.bindPopup(popup_af11ccc4aafa318f2c452f986d575d4f)
+        ;
+
+        
+    
+    
+            marker_8e0a74d3c2d8886564d87e6bc5ddc7f6.bindTooltip(
+                `<div>
+                     MedStar Washington Hospital Center
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7a5d8de998db8bdab7f85f3289421b6f = L.marker(
+                [38.9009, -77.0505],
+                {}
+            ).addTo(map_095fd4c578ace70d10699807a80bb12a);
+        
+    
+        var popup_c9064ce50b28eaf5bcc27bcfd9c4b296 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b7c4e47a6b7886ad5b2b3e91e2440dc9 = $(`<div id="html_b7c4e47a6b7886ad5b2b3e91e2440dc9" style="width: 100.0%; height: 100.0%;"><b>George Washington University Hospital</b><br>Diverse urban population, advanced OB/GYN surgical opportunities.</div>`)[0];
+            popup_c9064ce50b28eaf5bcc27bcfd9c4b296.setContent(html_b7c4e47a6b7886ad5b2b3e91e2440dc9);
+        
+
+        marker_7a5d8de998db8bdab7f85f3289421b6f.bindPopup(popup_c9064ce50b28eaf5bcc27bcfd9c4b296)
+        ;
+
+        
+    
+    
+            marker_7a5d8de998db8bdab7f85f3289421b6f.bindTooltip(
+                `<div>
+                     George Washington University Hospital
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9beefcf9970ef8764aae9fa5295f8f7d = L.marker(
+                [38.8749, -77.1195],
+                {}
+            ).addTo(map_095fd4c578ace70d10699807a80bb12a);
+        
+    
+        var popup_aca8152d0fa0de197b2919305e6002d3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5b0b9e7efc72bf3a09c54b910541b8d6 = $(`<div id="html_5b0b9e7efc72bf3a09c54b910541b8d6" style="width: 100.0%; height: 100.0%;"><b>Virginia Hospital Center</b><br>Community hospital with diverse patient base, surgical opportunities for generalists.</div>`)[0];
+            popup_aca8152d0fa0de197b2919305e6002d3.setContent(html_5b0b9e7efc72bf3a09c54b910541b8d6);
+        
+
+        marker_9beefcf9970ef8764aae9fa5295f8f7d.bindPopup(popup_aca8152d0fa0de197b2919305e6002d3)
+        ;
+
+        
+    
+    
+            marker_9beefcf9970ef8764aae9fa5295f8f7d.bindTooltip(
+                `<div>
+                     Virginia Hospital Center
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_decf9dedc855e59c5e1cb84ba37a0a7d = L.marker(
+                [38.9361, -77.0977],
+                {}
+            ).addTo(map_095fd4c578ace70d10699807a80bb12a);
+        
+    
+        var popup_5bbf7efc7ad9ea0bdafd0cdac18fab44 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c466227e3c056e87cd962a92f52c860b = $(`<div id="html_c466227e3c056e87cd962a92f52c860b" style="width: 100.0%; height: 100.0%;"><b>Sibley Memorial Hospital</b><br>Part of Johns Hopkins Medicine, boutique maternity care and gynecological surgery.</div>`)[0];
+            popup_5bbf7efc7ad9ea0bdafd0cdac18fab44.setContent(html_c466227e3c056e87cd962a92f52c860b);
+        
+
+        marker_decf9dedc855e59c5e1cb84ba37a0a7d.bindPopup(popup_5bbf7efc7ad9ea0bdafd0cdac18fab44)
+        ;
+
+        
+    
+    
+            marker_decf9dedc855e59c5e1cb84ba37a0a7d.bindTooltip(
+                `<div>
+                     Sibley Memorial Hospital
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_abba2fc250893d2d3d74a721f4b53993 = L.marker(
+                [38.9117, -77.0769],
+                {}
+            ).addTo(map_095fd4c578ace70d10699807a80bb12a);
+        
+    
+        var popup_95a02f5f72ca6659f960a2ac3a20d741 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_cbd424a2050b2028e8c13a774664d6da = $(`<div id="html_cbd424a2050b2028e8c13a774664d6da" style="width: 100.0%; height: 100.0%;"><b>MedStar Georgetown University Hospital</b><br>Academic center supporting generalists with varied surgical opportunities.</div>`)[0];
+            popup_95a02f5f72ca6659f960a2ac3a20d741.setContent(html_cbd424a2050b2028e8c13a774664d6da);
+        
+
+        marker_abba2fc250893d2d3d74a721f4b53993.bindPopup(popup_95a02f5f72ca6659f960a2ac3a20d741)
+        ;
+
+        
+    
+    
+            marker_abba2fc250893d2d3d74a721f4b53993.bindTooltip(
+                `<div>
+                     MedStar Georgetown University Hospital
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1497c694f688dc42eff158ce3c813836 = L.marker(
+                [38.8578, -77.3484],
+                {}
+            ).addTo(map_095fd4c578ace70d10699807a80bb12a);
+        
+    
+        var popup_260fe1531dbebba8ac8203ca5da9d2fd = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ffdc41066eaec0f9e251bc987eb0ee33 = $(`<div id="html_ffdc41066eaec0f9e251bc987eb0ee33" style="width: 100.0%; height: 100.0%;"><b>Inova Fairfax Hospital</b><br>Leader in high-risk obstetrics and gynecological surgeries.</div>`)[0];
+            popup_260fe1531dbebba8ac8203ca5da9d2fd.setContent(html_ffdc41066eaec0f9e251bc987eb0ee33);
+        
+
+        marker_1497c694f688dc42eff158ce3c813836.bindPopup(popup_260fe1531dbebba8ac8203ca5da9d2fd)
+        ;
+
+        
+    
+    
+            marker_1497c694f688dc42eff158ce3c813836.bindTooltip(
+                `<div>
+                     Inova Fairfax Hospital
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_af1a25a59197b0fc0ed71a29e592c165 = L.marker(
+                [39.0158, -77.0349],
+                {}
+            ).addTo(map_095fd4c578ace70d10699807a80bb12a);
+        
+    
+        var popup_f17782f8512c5681ec2d02818ec01ada = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8d73a37691654b1115d2a9ec8c42f78c = $(`<div id="html_8d73a37691654b1115d2a9ec8c42f78c" style="width: 100.0%; height: 100.0%;"><b>Holy Cross Hospital</b><br>Committed to community health, surgical opportunities for generalists.</div>`)[0];
+            popup_f17782f8512c5681ec2d02818ec01ada.setContent(html_8d73a37691654b1115d2a9ec8c42f78c);
+        
+
+        marker_af1a25a59197b0fc0ed71a29e592c165.bindPopup(popup_f17782f8512c5681ec2d02818ec01ada)
+        ;
+
+        
+    
+    
+            marker_af1a25a59197b0fc0ed71a29e592c165.bindTooltip(
+                `<div>
+                     Holy Cross Hospital
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ecc7332ae86ca0a59caf4d18e92b2b05 = L.marker(
+                [39.0581, -76.9953],
+                {}
+            ).addTo(map_095fd4c578ace70d10699807a80bb12a);
+        
+    
+        var popup_50f1c82cede5b282fa7026bb7510cb02 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e5caa97e90f38d989ab56f1f13fcedc7 = $(`<div id="html_e5caa97e90f38d989ab56f1f13fcedc7" style="width: 100.0%; height: 100.0%;"><b>Adventist HealthCare White Oak Medical Center</b><br>Community-centered care with surgical opportunities.</div>`)[0];
+            popup_50f1c82cede5b282fa7026bb7510cb02.setContent(html_e5caa97e90f38d989ab56f1f13fcedc7);
+        
+
+        marker_ecc7332ae86ca0a59caf4d18e92b2b05.bindPopup(popup_50f1c82cede5b282fa7026bb7510cb02)
+        ;
+
+        
+    
+    
+            marker_ecc7332ae86ca0a59caf4d18e92b2b05.bindTooltip(
+                `<div>
+                     Adventist HealthCare White Oak Medical Center
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e957721965c045af4fad8c56c85d57e5 = L.marker(
+                [38.9785, -76.5152],
+                {}
+            ).addTo(map_095fd4c578ace70d10699807a80bb12a);
+        
+    
+        var popup_0ca7b9de25a054ede477da8988422e85 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_047afd4408134c117bd5dc9e84ff512e = $(`<div id="html_047afd4408134c117bd5dc9e84ff512e" style="width: 100.0%; height: 100.0%;"><b>Luminis Health Anne Arundel Medical Center</b><br>Robust surgical programs serving diverse populations.</div>`)[0];
+            popup_0ca7b9de25a054ede477da8988422e85.setContent(html_047afd4408134c117bd5dc9e84ff512e);
+        
+
+        marker_e957721965c045af4fad8c56c85d57e5.bindPopup(popup_0ca7b9de25a054ede477da8988422e85)
+        ;
+
+        
+    
+    
+            marker_e957721965c045af4fad8c56c85d57e5.bindTooltip(
+                `<div>
+                     Luminis Health Anne Arundel Medical Center
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ca5866ccfa3adaa8f869208b6ca86a15 = L.marker(
+                [38.8951, -77.0171],
+                {}
+            ).addTo(map_095fd4c578ace70d10699807a80bb12a);
+        
+    
+        var popup_0e40d71ac7650c143a8e3e9499077a67 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_044f4bd08dee6ce1e7c62e704805f3ad = $(`<div id="html_044f4bd08dee6ce1e7c62e704805f3ad" style="width: 100.0%; height: 100.0%;"><b>Unity Health Care</b><br>FQHC focused on underserved populations, including surgical care.</div>`)[0];
+            popup_0e40d71ac7650c143a8e3e9499077a67.setContent(html_044f4bd08dee6ce1e7c62e704805f3ad);
+        
+
+        marker_ca5866ccfa3adaa8f869208b6ca86a15.bindPopup(popup_0e40d71ac7650c143a8e3e9499077a67)
+        ;
+
+        
+    
+    
+            marker_ca5866ccfa3adaa8f869208b6ca86a15.bindTooltip(
+                `<div>
+                     Unity Health Care
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d935298640cb8071b6ccdf4ce31cab66 = L.marker(
+                [38.9941, -76.9113],
+                {}
+            ).addTo(map_095fd4c578ace70d10699807a80bb12a);
+        
+    
+        var popup_f659b026fb08c3b15b00cb19d451df84 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_691ba92e2d7ed05e691b1ee97b369490 = $(`<div id="html_691ba92e2d7ed05e691b1ee97b369490" style="width: 100.0%; height: 100.0%;"><b>Shelby Women’s Health, LLC</b><br>Private clinic serving disadvantaged patients with surgical opportunities.</div>`)[0];
+            popup_f659b026fb08c3b15b00cb19d451df84.setContent(html_691ba92e2d7ed05e691b1ee97b369490);
+        
+
+        marker_d935298640cb8071b6ccdf4ce31cab66.bindPopup(popup_f659b026fb08c3b15b00cb19d451df84)
+        ;
+
+        
+    
+    
+            marker_d935298640cb8071b6ccdf4ce31cab66.bindTooltip(
+                `<div>
+                     Shelby Women’s Health, LLC
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_581eaae71bbd456180eb78d1df3d3da6 = L.marker(
+                [38.9161, -77.0124],
+                {}
+            ).addTo(map_095fd4c578ace70d10699807a80bb12a);
+        
+    
+        var popup_76e974f62bf49f8721581c41cb0cbaea = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c02212fca7046dd99055f637c637ab3a = $(`<div id="html_c02212fca7046dd99055f637c637ab3a" style="width: 100.0%; height: 100.0%;"><b>Children’s National Hospital</b><br>Maternal-fetal medicine for underserved high-risk pregnancies.</div>`)[0];
+            popup_76e974f62bf49f8721581c41cb0cbaea.setContent(html_c02212fca7046dd99055f637c637ab3a);
+        
+
+        marker_581eaae71bbd456180eb78d1df3d3da6.bindPopup(popup_76e974f62bf49f8721581c41cb0cbaea)
+        ;
+
+        
+    
+    
+            marker_581eaae71bbd456180eb78d1df3d3da6.bindTooltip(
+                `<div>
+                     Children’s National Hospital
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_78fdd5d925818bf448310e3e00ec50eb = L.marker(
+                [38.8997, -77.0469],
+                {}
+            ).addTo(map_095fd4c578ace70d10699807a80bb12a);
+        
+    
+        var popup_9f5622fb4bfa13633f4fa3ba750ce23a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c5bd6a31dfb09a10d517265e62a04841 = $(`<div id="html_c5bd6a31dfb09a10d517265e62a04841" style="width: 100.0%; height: 100.0%;"><b>GW Medical Faculty Associates</b><br>Outpatient practice with advanced OB/GYN care and surgeries.</div>`)[0];
+            popup_9f5622fb4bfa13633f4fa3ba750ce23a.setContent(html_c5bd6a31dfb09a10d517265e62a04841);
+        
+
+        marker_78fdd5d925818bf448310e3e00ec50eb.bindPopup(popup_9f5622fb4bfa13633f4fa3ba750ce23a)
+        ;
+
+        
+    
+    
+            marker_78fdd5d925818bf448310e3e00ec50eb.bindTooltip(
+                `<div>
+                     GW Medical Faculty Associates
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6488c5165433acae637893e45f466303 = L.marker(
+                [38.9057, -77.0419],
+                {}
+            ).addTo(map_095fd4c578ace70d10699807a80bb12a);
+        
+    
+        var popup_8c91c531a3e76868954bf15f9a38be9b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_41da370a49ff59b2a1ba87be47c87b0d = $(`<div id="html_41da370a49ff59b2a1ba87be47c87b0d" style="width: 100.0%; height: 100.0%;"><b>The Reiter, Hill & Johnson OB/GYN Practice</b><br>Comprehensive OB/GYN care, including surgeries.</div>`)[0];
+            popup_8c91c531a3e76868954bf15f9a38be9b.setContent(html_41da370a49ff59b2a1ba87be47c87b0d);
+        
+
+        marker_6488c5165433acae637893e45f466303.bindPopup(popup_8c91c531a3e76868954bf15f9a38be9b)
+        ;
+
+        
+    
+    
+            marker_6488c5165433acae637893e45f466303.bindTooltip(
+                `<div>
+                     The Reiter, Hill & Johnson OB/GYN Practice
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_009418f783ea53794eb4ad57a6595595 = L.marker(
+                [39.0023, -77.0369],
+                {}
+            ).addTo(map_095fd4c578ace70d10699807a80bb12a);
+        
+    
+        var popup_cb51a55c50743b8fec066b5c76e76c67 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a25de879f497c4f3c03cf0ccc1228381 = $(`<div id="html_a25de879f497c4f3c03cf0ccc1228381" style="width: 100.0%; height: 100.0%;"><b>Midwifery & Women's Health Practice</b><br>Holistic care blending midwifery and OB/GYN.</div>`)[0];
+            popup_cb51a55c50743b8fec066b5c76e76c67.setContent(html_a25de879f497c4f3c03cf0ccc1228381);
+        
+
+        marker_009418f783ea53794eb4ad57a6595595.bindPopup(popup_cb51a55c50743b8fec066b5c76e76c67)
+        ;
+
+        
+    
+    
+            marker_009418f783ea53794eb4ad57a6595595.bindTooltip(
+                `<div>
+                     Midwifery & Women's Health Practice
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_dad4f3ec4683f09ccd1c0600f995c028 = L.marker(
+                [38.8537, -77.2868],
+                {}
+            ).addTo(map_095fd4c578ace70d10699807a80bb12a);
+        
+    
+        var popup_444900dc7494e04231d12bc487f43eee = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0d786a3f32474694d149349723ee94e2 = $(`<div id="html_0d786a3f32474694d149349723ee94e2" style="width: 100.0%; height: 100.0%;"><b>Fairfax OB-GYN Associates</b><br>Private practice with personalized care and surgical opportunities.</div>`)[0];
+            popup_444900dc7494e04231d12bc487f43eee.setContent(html_0d786a3f32474694d149349723ee94e2);
+        
+
+        marker_dad4f3ec4683f09ccd1c0600f995c028.bindPopup(popup_444900dc7494e04231d12bc487f43eee)
+        ;
+
+        
+    
+    
+            marker_dad4f3ec4683f09ccd1c0600f995c028.bindTooltip(
+                `<div>
+                     Fairfax OB-GYN Associates
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b84a9a3464af01fa0e11294e70d109fa = L.marker(
+                [38.8978, -76.9802],
+                {}
+            ).addTo(map_095fd4c578ace70d10699807a80bb12a);
+        
+    
+        var popup_92ac93fd18cd55c6c70dafaa9c7631ee = L.popup({"maxWidth": "100%"});
+
+        
+            var html_76d048f02efb1deaa0d89f6400393396 = $(`<div id="html_76d048f02efb1deaa0d89f6400393396" style="width: 100.0%; height: 100.0%;"><b>Planned Parenthood of Metropolitan Washington</b><br>Reproductive health services for underserved populations.</div>`)[0];
+            popup_92ac93fd18cd55c6c70dafaa9c7631ee.setContent(html_76d048f02efb1deaa0d89f6400393396);
+        
+
+        marker_b84a9a3464af01fa0e11294e70d109fa.bindPopup(popup_92ac93fd18cd55c6c70dafaa9c7631ee)
+        ;
+
+        
+    
+    
+            marker_b84a9a3464af01fa0e11294e70d109fa.bindTooltip(
+                `<div>
+                     Planned Parenthood of Metropolitan Washington
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_75b19adb997d1aace6340e725db761e3 = L.marker(
+                [38.8749, -77.1197],
+                {}
+            ).addTo(map_095fd4c578ace70d10699807a80bb12a);
+        
+    
+        var popup_e9f89fbec9b66a7538fe4df5376e924b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d9ad85d0bb7e310d199c37b0d4e71cdb = $(`<div id="html_d9ad85d0bb7e310d199c37b0d4e71cdb" style="width: 100.0%; height: 100.0%;"><b>OB/GYN Associates of Northern Virginia</b><br>High patient satisfaction and surgical opportunities for generalists.</div>`)[0];
+            popup_e9f89fbec9b66a7538fe4df5376e924b.setContent(html_d9ad85d0bb7e310d199c37b0d4e71cdb);
+        
+
+        marker_75b19adb997d1aace6340e725db761e3.bindPopup(popup_e9f89fbec9b66a7538fe4df5376e924b)
+        ;
+
+        
+    
+    
+            marker_75b19adb997d1aace6340e725db761e3.bindTooltip(
+                `<div>
+                     OB/GYN Associates of Northern Virginia
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_af933a09272b5629e7aebefa3907695a = L.marker(
+                [38.9036, -77.0432],
+                {}
+            ).addTo(map_095fd4c578ace70d10699807a80bb12a);
+        
+    
+        var popup_e63e0173abad2ba34bf84288eaafd63f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_47757c128f5cb80f1852b67a6296a508 = $(`<div id="html_47757c128f5cb80f1852b67a6296a508" style="width: 100.0%; height: 100.0%;"><b>Capital Women’s Care</b><br>Comprehensive care across multiple locations for underserved populations.</div>`)[0];
+            popup_e63e0173abad2ba34bf84288eaafd63f.setContent(html_47757c128f5cb80f1852b67a6296a508);
+        
+
+        marker_af933a09272b5629e7aebefa3907695a.bindPopup(popup_e63e0173abad2ba34bf84288eaafd63f)
+        ;
+
+        
+    
+    
+            marker_af933a09272b5629e7aebefa3907695a.bindTooltip(
+                `<div>
+                     Capital Women’s Care
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4104adfef003bcd39ce00642f8453dc2 = L.marker(
+                [38.8318, -77.0687],
+                {}
+            ).addTo(map_095fd4c578ace70d10699807a80bb12a);
+        
+    
+        var popup_b18a37119f71aa4d6c1f897cb20d95da = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6a1342ee595280f1ff529a0ba51e1479 = $(`<div id="html_6a1342ee595280f1ff529a0ba51e1479" style="width: 100.0%; height: 100.0%;"><b>Kaiser Permanente - Alexandria Medical Center</b><br>Integrated care model with diverse patient base and surgical opportunities.</div>`)[0];
+            popup_b18a37119f71aa4d6c1f897cb20d95da.setContent(html_6a1342ee595280f1ff529a0ba51e1479);
+        
+
+        marker_4104adfef003bcd39ce00642f8453dc2.bindPopup(popup_b18a37119f71aa4d6c1f897cb20d95da)
+        ;
+
+        
+    
+    
+            marker_4104adfef003bcd39ce00642f8453dc2.bindTooltip(
+                `<div>
+                     Kaiser Permanente - Alexandria Medical Center
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ec913a8b6bf168f3e18f042912f9091e = L.marker(
+                [38.8806, -77.1054],
+                {}
+            ).addTo(map_095fd4c578ace70d10699807a80bb12a);
+        
+    
+        var popup_d549f5101a5be64fd8ba7186bbeecaf8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8c6675c74dfac16bbc9ddf5aa1c53986 = $(`<div id="html_8c6675c74dfac16bbc9ddf5aa1c53986" style="width: 100.0%; height: 100.0%;"><b>Privia Medical Group</b><br>Physician-owned practices serving low-income populations with surgical care.</div>`)[0];
+            popup_d549f5101a5be64fd8ba7186bbeecaf8.setContent(html_8c6675c74dfac16bbc9ddf5aa1c53986);
+        
+
+        marker_ec913a8b6bf168f3e18f042912f9091e.bindPopup(popup_d549f5101a5be64fd8ba7186bbeecaf8)
+        ;
+
+        
+    
+    
+            marker_ec913a8b6bf168f3e18f042912f9091e.bindTooltip(
+                `<div>
+                     Privia Medical Group
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_69dddf4a51de1b9d1f23289e041c0aff = L.marker(
+                [38.8864, -77.0965],
+                {}
+            ).addTo(map_095fd4c578ace70d10699807a80bb12a);
+        
+    
+        var popup_150b108de6c88c5a19f89bc5d13a023b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ee8c1400f55327be5b349ac47d431c85 = $(`<div id="html_ee8c1400f55327be5b349ac47d431c85" style="width: 100.0%; height: 100.0%;"><b>Johns Hopkins Community Physicians</b><br>Community-focused outpatient care with surgical opportunities.</div>`)[0];
+            popup_150b108de6c88c5a19f89bc5d13a023b.setContent(html_ee8c1400f55327be5b349ac47d431c85);
+        
+
+        marker_69dddf4a51de1b9d1f23289e041c0aff.bindPopup(popup_150b108de6c88c5a19f89bc5d13a023b)
+        ;
+
+        
+    
+    
+            marker_69dddf4a51de1b9d1f23289e041c0aff.bindTooltip(
+                `<div>
+                     Johns Hopkins Community Physicians
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
+</html>
